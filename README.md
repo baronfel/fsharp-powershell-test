@@ -18,3 +18,7 @@ D:\code\scratch> .\fs_codedom.ps1
 2
 1
 ```
+
+## Isolated environment (requires docker)
+
+run `test-env.cmd` to get a completely dependency-free (aside from having powershell core installed) powershell prompt. then run `cd code` to go to the working directory and `./fs_codedom.ps` to run the script. Exit the shell with `exit`
