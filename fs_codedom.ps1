@@ -1,6 +1,8 @@
-# load local deps after paket install
+# use this to force CodeDom to use the local compiler
+$env:FSHARPINSTALLDIR="./packages/FSharp.Compiler.Tools/tools"
+
 Add-Type -Path "./packages/FSharp.Compiler.CodeDom/lib/net40/FSharp.Compiler.CodeDom.dll"
-Add-Type -Path "./packages/FSharp.Core/lib/net40/FSharp.Core.dll"
+Add-Type -Path "./packages/FSharp.Core/lib/net45/FSharp.Core.dll"
 
 $Provider = New-Object -TypeName FSharp.Compiler.CodeDom.FSharpCodeProvider
 
